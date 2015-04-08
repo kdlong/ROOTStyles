@@ -1,3 +1,3 @@
 import ROOT
 
-print "root styles"
+from tdrStyle import tdrStyle
