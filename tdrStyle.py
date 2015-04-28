@@ -1,7 +1,7 @@
 import ROOT
 """
 tdrStyle
- Taken from https:#ghm.web.cern.ch/ghm/plots/MacroExample/tdrstyle.C
+ Taken from https://ghm.web.cern.ch/ghm/plots/MacroExample/tdrstyle.C
  and modified a bit.  Additions:
   - Legend formatting
   - Color and Style name constants instead of numbers
@@ -23,7 +23,7 @@ tdrStyle.SetPadBorderMode(0)
 tdrStyle.SetPadColor(ROOT.kWhite)
 tdrStyle.SetPadGridX(False)
 tdrStyle.SetPadGridY(False)
-tdrStyle.SetGridColor(0)
+tdrStyle.SetGridColor(ROOT.kWhite)
 tdrStyle.SetGridStyle(3)
 tdrStyle.SetGridWidth(1)
 
@@ -32,14 +32,14 @@ tdrStyle.SetFrameBorderMode(0)
 tdrStyle.SetFrameBorderSize(1)
 tdrStyle.SetFrameFillColor(ROOT.kWhite)
 tdrStyle.SetFrameFillStyle(0)
-tdrStyle.SetFrameLineColor(1)
+tdrStyle.SetFrameLineColor(ROOT.kBlack)
 tdrStyle.SetFrameLineStyle(1)
 tdrStyle.SetFrameLineWidth(1)
 
 # For the histo:
-# tdrStyle.SetHistFillColor(1)
+# tdrStyle.SetHistFillColor(ROOT.kBlack)
 # tdrStyle.SetHistFillStyle(0)
-tdrStyle.SetHistLineColor(1)
+tdrStyle.SetHistLineColor(ROOT.kBlack)
 tdrStyle.SetHistLineStyle(0)
 tdrStyle.SetHistLineWidth(1)
 # tdrStyle.SetLegoInnerR(0.5)
@@ -54,7 +54,7 @@ tdrStyle.SetMarkerStyle(20)
 #For the fit/function:
 tdrStyle.SetOptFit(1)
 tdrStyle.SetFitFormat("5.4g")
-tdrStyle.SetFuncColor(2)
+tdrStyle.SetFuncColor(ROOT.kRed)
 tdrStyle.SetFuncStyle(1)
 tdrStyle.SetFuncWidth(1)
 
@@ -71,7 +71,7 @@ tdrStyle.SetOptStat(0) # To display the mean and RMS:   SetOptStat("mr")
 tdrStyle.SetStatColor(ROOT.kWhite)
 tdrStyle.SetStatFont(42)
 tdrStyle.SetStatFontSize(0.025)
-tdrStyle.SetStatTextColor(1)
+tdrStyle.SetStatTextColor(ROOT.kBlack)
 tdrStyle.SetStatFormat("6.4g")
 tdrStyle.SetStatBorderSize(1)
 tdrStyle.SetStatH(0.1)
@@ -89,8 +89,8 @@ tdrStyle.SetPadRightMargin(0.04)
 # For the Global title:
 tdrStyle.SetOptTitle(0)
 tdrStyle.SetTitleFont(42)
-tdrStyle.SetTitleColor(1)
-tdrStyle.SetTitleTextColor(1)
+tdrStyle.SetTitleColor(ROOT.kBlack)
+tdrStyle.SetTitleTextColor(ROOT.kBlack)
 tdrStyle.SetTitleFillColor(ROOT.kWhite)
 tdrStyle.SetTitleFontSize(0.05)
 # tdrStyle.SetTitleH(0) # Set the height of the title box
@@ -101,7 +101,7 @@ tdrStyle.SetTitleFontSize(0.05)
 # tdrStyle.SetTitleBorderSize(2)
 
 # For the axis titles:
-tdrStyle.SetTitleColor(1, "XYZ")
+tdrStyle.SetTitleColor(ROOT.kBlack, "XYZ")
 tdrStyle.SetTitleFont(42, "XYZ")
 tdrStyle.SetTitleSize(0.05, "XYZ")
 # tdrStyle.SetTitleXSize(0.02) # Another way to set the size?
@@ -116,13 +116,13 @@ tdrStyle.SetLegendBorderSize(0)
 tdrStyle.SetLegendFillColor(ROOT.kWhite)
 
 # For the axis labels:
-tdrStyle.SetLabelColor(1, "XYZ")
+tdrStyle.SetLabelColor(ROOT.kBlack, "XYZ")
 tdrStyle.SetLabelFont(42, "XYZ")
 tdrStyle.SetLabelOffset(0.007, "XYZ")
 tdrStyle.SetLabelSize(0.03, "XYZ")
 
 # For the axis:
-tdrStyle.SetAxisColor(1, "XYZ")
+tdrStyle.SetAxisColor(ROOT.kBlack, "XYZ")
 tdrStyle.SetStripDecimals(True)
 tdrStyle.SetTickLength(0.03, "XYZ")
 tdrStyle.SetNdivisions(6 + 5*100 + 0*10000, "XYZ") # Primary, Secondary, and Tertiary divisons
