@@ -1,3 +1,3 @@
 import ROOT
 
-from tdrStyle import tdrStyle
+from .tdrStyle import tdrStyle
